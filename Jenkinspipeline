@@ -13,6 +13,8 @@ stage('CheckOutCode'){
 git branch: 'development', credentialsId: '166c70a2-1df5-4993-a566-0a795862da8c', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
 }
 
+
+
 stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
